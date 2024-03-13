@@ -60,6 +60,23 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '40px',
+    opacity: 1,
+    scale: 1.1,
+    duration: 2500,
+    delay: 300,
+    // reset: true,
+
+})
+
+sr.reveal(`.home__data`)
+
+sr.reveal(`.home__image`, { rotate: {z: -15} })
+sr.reveal(`.home__bread`, { rotate: {z: 15} })
+sr.reveal(`.home__footer`, { scale: 1, origin: 'bottom' })
+
 
 
 
